@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Game/Game.gd" type="Script" id=1]
+[ext_resource path="res://Stars/Stars.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player/images/spaceship-yellow-07.png" type="Texture" id=4]
+
+[node name="Game" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Stars" parent="." instance=ExtResource( 2 )]
+centered = false
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+texture = ExtResource( 4 )
+
